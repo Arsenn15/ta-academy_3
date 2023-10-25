@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "63024cff-cef2-42df-90e2-c074d66f7acf",
+		"name": "Homework3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30747054"
+	},
+	"item": [
+		{
+			"name": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.3.1413001713.1697965123; PHPSESSID=bb913aedf4cb7ad3d0126103d850656b; _ga=GA1.2.1413001713.1697965123; _gid=GA1.3.646139126.1698251786; _gid=GA1.2.646139126.1698251786; frontend=94ab90b0002aefe3ec947913374678db; _ga_WX03P5E7CT=GS1.1.1698251785.6.1.1698252437.0.0.0"
+					},
+					{
+						"key": "origin",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com/eyeglasses-collection"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "store",
+						"value": "17"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "website",
+						"value": "4"
+					},
+					{
+						"key": "x-visitor-id",
+						"value": "9BYcRxg6bobm64gqJJQLW"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"ags\",\"lastname\":\"ksadha\",\"email\":\"kas@shg.com\",\"password\":\"Arr774411\",\"registrationMethod\":\"default\",\"websiteId\":4,\"clientId\":\"memberId\"}"
+				},
+				"url": {
+					"raw": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+					"protocol": "https",
+					"host": [
+						"uvp-0000-uhc-desktop",
+						"gusadev",
+						"com"
+					],
+					"path": [
+						"ms",
+						"customer",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.3.1413001713.1697965123; PHPSESSID=bb913aedf4cb7ad3d0126103d850656b; _ga=GA1.2.1413001713.1697965123; _gid=GA1.3.646139126.1698251786; _gid=GA1.2.646139126.1698251786; _gat_330793217=1; frontend=c7434b6375455fb42427d1db6f731a1b; _ga_WX03P5E7CT=GS1.1.1698251785.6.1.1698252581.0.0.0"
+					},
+					{
+						"key": "origin",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com/eyeglasses-collection"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "store",
+						"value": "17"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "website",
+						"value": "4"
+					},
+					{
+						"key": "x-visitor-id",
+						"value": "9BYcRxg6bobm64gqJJQLW"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"sadkjh\",\"lastname\":\"alkjdlk\",\"email\":\"jha@hskaj.com\",\"password\":\"Att777899\",\"registrationMethod\":\"default\",\"websiteId\":4,\"clientId\":\"memberId\"}"
+				},
+				"url": {
+					"raw": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+					"protocol": "https",
+					"host": [
+						"uvp-0000-uhc-desktop",
+						"gusadev",
+						"com"
+					],
+					"path": [
+						"ms",
+						"customer",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.3.1413001713.1697965123; PHPSESSID=bb913aedf4cb7ad3d0126103d850656b; _ga=GA1.2.1413001713.1697965123; _gid=GA1.3.646139126.1698251786; _gid=GA1.2.646139126.1698251786; _gat_330793217=1; frontend=c11528d1ffff823a37bdd4592c40a308; _ga_WX03P5E7CT=GS1.1.1698251785.6.1.1698252648.0.0.0"
+					},
+					{
+						"key": "origin",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com/eyeglasses-collection"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "store",
+						"value": "17"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "website",
+						"value": "4"
+					},
+					{
+						"key": "x-visitor-id",
+						"value": "9BYcRxg6bobm64gqJJQLW"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"Asan\",\"lastname\":\"KSJhn\",\"email\":\"sjk@kja.com\",\"password\":\"Att745612\",\"registrationMethod\":\"default\",\"websiteId\":4,\"clientId\":\"memberId\"}"
+				},
+				"url": {
+					"raw": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+					"protocol": "https",
+					"host": [
+						"uvp-0000-uhc-desktop",
+						"gusadev",
+						"com"
+					],
+					"path": [
+						"ms",
+						"customer",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
