@@ -1,4 +1,4 @@
-import { Component } from '@Core/component';
+import {Component} from '@Core/component';
 
 export class GridItem extends Component {
     private LOCATORS = {
