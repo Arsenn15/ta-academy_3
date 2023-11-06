@@ -6,7 +6,7 @@ export class RegistrationPage extends Container {
         lastNameInput: this.page.locator('//input[@id="input-5"]'),
         emailInput: this.page.locator('//input[@id="input-6"]'),
         passwordInput: this.page.locator('//input[@id="input-7"]'),
-        createNewCustomerBtn: this.page.locator('//button[@aria-label="Create new account"]')
+        createNewCustomerBtn: this.page.locator('//button[@aria-label="Create new account"]'),
     };
 
     public async fillInputs(): Promise<void> {

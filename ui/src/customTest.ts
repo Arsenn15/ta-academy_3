@@ -1,9 +1,9 @@
-import {test as base, expect} from '@playwright/test';
-import {HomePage} from '@Components/homePage/homePage';
-import {CategoryPage} from '@Components/categoryPage/categoryPage';
-import type {Browser, Page} from '@playwright/test';
-import {LoginComponent} from "@Components/loginComponent/loginComponent";
-import {RegistrationPage} from "@Components/loginComponent/logInComponent/registrationNavigation/registrationPage";
+import { test as base, expect } from '@playwright/test';
+import { HomePage } from '@Components/homePage/homePage';
+import { CategoryPage } from '@Components/categoryPage/categoryPage';
+import type { Browser, Page } from '@playwright/test';
+import { LoginComponent } from "@Components/loginComponent/loginComponent";
+import { RegistrationPage } from "@Components/loginComponent/logInComponent/registrationNavigation/registrationPage";
 import { CustomerPage } from "@Components/customerPage/customerPage";
 
 export type Options = {

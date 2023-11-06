@@ -1,4 +1,4 @@
-import {Container} from "@Core/container";
+import { Container } from "@Core/container";
 
 export class CustomerPage extends Container {
     private LOCATORS = {
@@ -18,7 +18,7 @@ export class CustomerPage extends Container {
     public async checkHelloCustomerName(): Promise<string|null>{
         const helloNewCustomerName = await this.LOCATORS.helloNewCustomerNavigation.textContent();
         return helloNewCustomerName;
-    }
+    };
 
     public async closeBtn (): Promise<void>{
         await this.LOCATORS.closeBtnNavigation.click();
@@ -27,7 +27,8 @@ export class CustomerPage extends Container {
     public async hoverCustomerAccount (): Promise<void> {
         await this.LOCATORS.customerAccount.hover({force: true});
     };
-    public async singOutBtn (): Promise<void>{
+
+    public async signOutBtn (): Promise<void>{
         await this.LOCATORS.singOutNavigation.click();
     };
 };

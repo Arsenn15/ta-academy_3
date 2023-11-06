@@ -11,5 +11,5 @@ export class LoginComponent extends Container {
     };
     public async isVisiblePopUp (): Promise<boolean> {
        return  await this.LOCATORS.popUpModalNavigation.isVisible();
-    }
-}
+    };
+};

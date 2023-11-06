@@ -1,4 +1,4 @@
-import {expect, test} from "@Test";
+import { expect, test } from "@Test";
 
 test.describe('UHC-1-pom', () => {
     test('Registration new customer with valid data and checking user data reset after logout', async ({page,
@@ -30,7 +30,8 @@ test.describe('UHC-1-pom', () => {
 
             await customerPage.closeBtn();
             await customerPage.hoverCustomerAccount();
-            await customerPage.singOutBtn();
+            await customerPage.signOutBtn();
+
             expect(await navigation.checkAccount()).toBe("My Account");
 
         });

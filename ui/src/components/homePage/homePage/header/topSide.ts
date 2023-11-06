@@ -1,5 +1,5 @@
-import {Component} from "@Core/component";
-import {MyAccountNavigation} from "@Components/homePage/homePage/header/topSide/myAccountNavigation";
+import { Component } from "@Core/component";
+import { MyAccountNavigation } from "@Components/homePage/homePage/header/topSide/myAccountNavigation";
 
 export class TopSide extends Component {
     protected LOCATORS = {
