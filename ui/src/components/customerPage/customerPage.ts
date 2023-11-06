@@ -5,7 +5,8 @@ export class CustomerPage extends Container {
         welcomePopUp: this.page.locator('//div[contains(@class, "rc-dialog-body")]'),
         customerAccount: this.page.locator('//div[contains(@class, "myAccount__myAccountMenu")]'),
         closeBtnNavigation: this.page.locator('//button[contains(@class, "rc-dialog-close")]'),
-        singOutNavigation: this.page.locator('//li/button[text()="Sign out"]')
+        singOutNavigation: this.page.locator('//li/button[text()="Sign out"]'),
+        helloNewCustomerNavigation: this.page.locator('//h2[contains(@class,"welcomePopup__title")]'),
     };
 
 
@@ -13,6 +14,11 @@ export class CustomerPage extends Container {
     public async isVisibleWelcomePopUp ():Promise<boolean>  {
         return  await  this.LOCATORS.welcomePopUp.isVisible();
     };
+
+    public async checkHelloCustomerName(): Promise<string|null>{
+        const helloNewCustomerName = await this.LOCATORS.helloNewCustomerNavigation.textContent();
+        return helloNewCustomerName;
+    }
 
     public async closeBtn (): Promise<void>{
         await this.LOCATORS.closeBtnNavigation.click();

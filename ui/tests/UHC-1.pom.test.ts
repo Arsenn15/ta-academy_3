@@ -7,23 +7,26 @@ test.describe('UHC-1-pom', () => {
                                                          customerPage,
                                                          loginComponent,
                                                      }) => {
-        await test.step('steps1-5, Open Home page, do registration and sing out', async () => {
+        await test.step('steps 1-5, Open Home page, do registration and sing out', async () => {
             await homePage.open();
+
             const navigation = homePage.Header.TopSide.MyAccountNavigation;
-            await navigation.hoverMyAccount()
+            await navigation.hoverMyAccount();
             await navigation.clickLogInBtn();
 
-            expect(await loginComponent.isVisiblePopUp()).toBe(true)
+            expect(await loginComponent.isVisiblePopUp()).toBe(true);
 
             await loginComponent.clickCreateUHCGlassesAccountBtn();
-
             await registrationPage.fillInputs();
             await registrationPage.clickCreateNewCustomerBtn();
 
             await expect(async () => {
-                expect(await customerPage.isVisibleWelcomePopUp()).toBe(true)
+                expect(await customerPage.isVisibleWelcomePopUp()).toBe(true);
             }).toPass();
 
+            await expect(async () => {
+                expect(await customerPage.checkHelloCustomerName()).toBe("Welcome, Artur");
+            }).toPass();
 
             await customerPage.closeBtn();
             await customerPage.hoverCustomerAccount();
