@@ -1,5 +1,5 @@
-import type {Options} from '@Test';
-import {test, expect} from '@Test';
+import type { Options } from '@Test';
+import { test, expect } from '@Test';
 
 test.describe('UHC-1 (test ID)', () => {
     test('Registration new customer with valid data and checking user data reset after logout(test title)', async ({
