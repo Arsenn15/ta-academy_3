@@ -11,21 +11,30 @@ export class CartPage extends Container {
         modalAddItem: './/div[@data-testid="modal-inside"]',
     };
 
+    public async isVisibleModal(): Promise<boolean> {
+        try {
+            const modalEvent = await document.waitForXpath(this.selectors.modalAddItem);
+            return modalEvent !== null;
+        } catch (error) {
+            return false;
+        }
+    };
+
     public async fulfill(): Promise<void> {
         await super.fulfill();
-    }
+    };
 
     public async getHeaderTitle(): Promise<string> {
         const [title] = await document.waitForQuerySelector(this.selectors.title);
         return title.textContent;
-    }
+    };
 
     public async getCartList(): Promise<CartList> {
         const [cartListElement] = await document.waitForXpath(this.selectors.cartList);
         return new CartList(cartListElement);
-    }
+    };
 
-    public async OpenModalAddItem(): Promise<ModalAddItem> {
+    public async openModalAddItem(): Promise<ModalAddItem> {
         const [button] = await document.waitForXpath(this.selectors.buttonAddCartItem);
         fireEvent.click(button);
 

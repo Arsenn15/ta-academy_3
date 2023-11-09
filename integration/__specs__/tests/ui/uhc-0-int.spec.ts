@@ -18,7 +18,6 @@ describe('UHC-0-int', () => {
     test('Test title', async () => {
         await cartPage.fulfill();
         const title = await cartPage.getHeaderTitle();
-
         reporter.startStep('This is test step reporter');
             expect(title).toStrictEqual('Shopping cart');
         reporter.endStep();
